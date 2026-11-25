@@ -1,0 +1,37 @@
+# RenalGuard production dependencies
+# Install: pip install -r requirements.txt
+
+# Web
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+streamlit==1.35.0
+requests==2.32.3
+
+# Database (SQLite is included with Python)
+sqlalchemy==2.0.30
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.9
+
+# ML
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+xgboost==2.0.3
+shap==0.45.1
+joblib==1.4.2
+plotly==5.22.0
+
+# Utils
+pydantic==2.7.1
+pydantic-settings==2.2.1
+pyyaml==6.0.1
+python-dotenv==1.0.1
+reportlab==4.2.2
+
+
+# Testing
+pytest==8.2.0

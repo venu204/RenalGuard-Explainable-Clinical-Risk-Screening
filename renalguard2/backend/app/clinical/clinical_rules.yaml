@@ -1,0 +1,110 @@
+rules:
+  - rule_id: RENAL_001
+    category: CKD
+    parameter: creatinine
+    operator: ">"
+    threshold: 1.5
+    severity: MODERATE
+    title: "Elevated Serum Creatinine"
+    message: "Serum creatinine above 1.5 mg/dL may indicate impaired renal function."
+    suggested_action: "Consider eGFR calculation and nephrology referral."
+    enabled: true
+
+  - rule_id: RENAL_002
+    category: CKD
+    parameter: creatinine
+    operator: ">"
+    threshold: 3.0
+    severity: HIGH
+    title: "Severely Elevated Serum Creatinine"
+    message: "Serum creatinine above 3.0 mg/dL — significant renal impairment possible."
+    suggested_action: "Urgent nephrology review recommended."
+    enabled: true
+
+  - rule_id: ELECTROLYTE_001
+    category: ELECTROLYTE
+    parameter: potassium
+    operator: ">"
+    threshold: 5.5
+    severity: CRITICAL
+    title: "Hyperkalaemia Detected"
+    message: "Serum potassium above 5.5 mEq/L — potentially dangerous electrolyte abnormality."
+    suggested_action: "Immediate review by qualified healthcare professional."
+    enabled: true
+
+  - rule_id: ELECTROLYTE_002
+    category: ELECTROLYTE
+    parameter: potassium
+    operator: "<"
+    threshold: 3.5
+    severity: HIGH
+    title: "Hypokalaemia Detected"
+    message: "Serum potassium below 3.5 mEq/L — electrolyte imbalance."
+    suggested_action: "Clinician review for potassium supplementation assessment."
+    enabled: true
+
+  - rule_id: HTN_001
+    category: HYPERTENSION
+    parameter: systolic_bp
+    operator: ">="
+    threshold: 140
+    severity: MODERATE
+    title: "Elevated Systolic Blood Pressure"
+    message: "Systolic BP >= 140 mmHg — consistent with Stage 1/2 hypertension criteria."
+    suggested_action: "Lifestyle modification and monitoring."
+    enabled: true
+
+  - rule_id: HTN_002
+    category: HYPERTENSION
+    parameter: systolic_bp
+    operator: ">="
+    threshold: 180
+    severity: CRITICAL
+    title: "Hypertensive Crisis Range"
+    message: "Systolic BP >= 180 mmHg — hypertensive urgency/emergency range."
+    suggested_action: "Immediate clinical evaluation required."
+    enabled: true
+
+  - rule_id: DIABETES_001
+    category: DIABETES
+    parameter: hba1c
+    operator: ">="
+    threshold: 6.5
+    severity: MODERATE
+    title: "HbA1c in Diabetes Diagnostic Range"
+    message: "HbA1c >= 6.5% — consistent with diabetes diagnostic threshold (ADA)."
+    suggested_action: "Formal diagnosis requires clinical confirmation."
+    enabled: true
+
+  - rule_id: DIABETES_002
+    category: DIABETES
+    parameter: hba1c
+    operator: ">="
+    threshold: 8.0
+    severity: HIGH
+    title: "Poorly Controlled Glycaemia"
+    message: "HbA1c >= 8.0% — suggests suboptimal glycaemic control."
+    suggested_action: "Urgent diabetes management review."
+    enabled: true
+
+  - rule_id: ANAEMIA_001
+    category: ANAEMIA
+    parameter: hemoglobin
+    operator: "<"
+    threshold: 10.0
+    severity: MODERATE
+    title: "Anaemia Detected"
+    message: "Haemoglobin below 10 g/dL — moderate anaemia range."
+    suggested_action: "Investigate aetiology. Common in CKD."
+    enabled: true
+
+  - rule_id: ANAEMIA_002
+    category: ANAEMIA
+    parameter: hemoglobin
+    operator: "<"
+    threshold: 7.0
+    severity: HIGH
+    title: "Severe Anaemia Detected"
+    message: "Haemoglobin below 7 g/dL — severe anaemia."
+    suggested_action: "Urgent haematological review."
+    enabled: true

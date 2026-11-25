@@ -1,0 +1,5 @@
+# Optional, only for experimentation and notebooks. Not needed to run the app.
+jupyter==1.0.0
+ipykernel==6.29.4
+matplotlib==3.8.4
+seaborn==0.13.2

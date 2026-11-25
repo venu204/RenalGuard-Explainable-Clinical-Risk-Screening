@@ -1,0 +1,108 @@
+{
+  "CKD": {
+    "disease": "CKD",
+    "algorithm": "LogisticRegression",
+    "version": "1.0.0",
+    "training_date": "2026-10-22T16:08:37.371843",
+    "feature_list": [
+      "id",
+      "age",
+      "bp",
+      "sg",
+      "al",
+      "su",
+      "rbc",
+      "pc",
+      "pcc",
+      "ba",
+      "bgr",
+      "bu",
+      "sc",
+      "sod",
+      "pot",
+      "hemo",
+      "pcv",
+      "wc",
+      "rc",
+      "htn",
+      "dm",
+      "cad",
+      "appet",
+      "pe",
+      "ane"
+    ],
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "mcc": 1.0,
+      "brier_score": 0.0144,
+      "specificity": 1.0,
+      "sensitivity": 1.0
+    },
+    "train_samples": 289,
+    "test_samples": 60
+  },
+  "DIABETES": {
+    "disease": "DIABETES",
+    "algorithm": "XGBoost",
+    "version": "1.0.0",
+    "training_date": "2026-10-22T16:08:41.783344",
+    "feature_list": [
+      "age",
+      "hypertension",
+      "heart_disease",
+      "bmi",
+      "HbA1c_level",
+      "blood_glucose_level",
+      "gender_enc",
+      "smoking_enc"
+    ],
+    "metrics": {
+      "accuracy": 0.9711,
+      "precision": 0.9376,
+      "recall": 0.7067,
+      "f1": 0.8059,
+      "roc_auc": 0.9787,
+      "mcc": 0.7998,
+      "brier_score": 0.0246,
+      "specificity": 0.9956,
+      "sensitivity": 0.7067
+    },
+    "train_samples": 72250,
+    "test_samples": 15000
+  },
+  "HYPERTENSION": {
+    "disease": "HYPERTENSION",
+    "algorithm": "HistGradientBoosting",
+    "version": "1.0.0",
+    "training_date": "2026-10-22T16:08:43.547344",
+    "feature_list": [
+      "Age",
+      "Salt_Intake",
+      "Stress_Score",
+      "BP_History",
+      "Sleep_Duration",
+      "BMI",
+      "Medication",
+      "Family_History",
+      "Exercise_Level",
+      "Smoking_Status"
+    ],
+    "metrics": {
+      "accuracy": 0.9799,
+      "precision": 0.9627,
+      "recall": 1.0,
+      "f1": 0.981,
+      "roc_auc": 0.9986,
+      "mcc": 0.9604,
+      "brier_score": 0.0175,
+      "specificity": 0.958,
+      "sensitivity": 1.0
+    },
+    "train_samples": 1433,
+    "test_samples": 298
+  }
+}
